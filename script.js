@@ -10,5 +10,6 @@ $( document ).ready(function() {
     $("#first-card").load(firstCard)
     $("#second-card").load(secondCard)
     $("#third-card").load(thirdCard)
+    
 
 });
