@@ -14,9 +14,9 @@ $( document ).ready(function() {
     $("#first-card").load(firstCard)
 
     $("#second-card").load(secondCard, function(){
-        $("#project-card-1").load(project1)
-        // $("#project-card-2").load(projectCard2)
-        // $("#project-card-3").load(projectCard2)
+        $(".project-card-1").load(project1)
+        $(".project-card-2").load(project2)
+        $(".project-card-3").load(project1)
         
     })
     $("#third-card").load(thirdCard)

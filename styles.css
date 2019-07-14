@@ -35,12 +35,20 @@ body{
     height: 4rem;
     background-color: #FFFFFF;
     text-align: center;
+    z-index: 1;
 }
 
 .nav-item{
     color: #DBE9EE;
     margin:2rem;
     font-size: 1.5rem;
+}
+
+.project-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
 }
 
 /* ECF0EF */
@@ -103,15 +111,38 @@ body{
     flex-direction: column;
 }
 
+#project-card-2{
+    display: flex;
+    flex-direction: column;
+    /* max-width: 20rem; */
+}
+
 .preview-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    border:  1em solid lightgrey;
 }
 
+.preview-left-column{
+    padding: 3em 1em 0 1em;
+}
+.preview-left-column img{
+    opacity: 0.8
+}
+/* .preview-left-column:focus,
 .preview-left-column:hover{
     outline: 1px solid gray;
+} */
 
+.sub-card{
+    padding: 1em;
 }
+
+/* .sub-card:focus,
+.sub-card:hover{
+    outline: 1px solid gray;
+} */
+
 
 
 #third-card{
