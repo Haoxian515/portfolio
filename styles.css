@@ -69,7 +69,7 @@ body{
     max-height: 16em;
 
     display: block;
-    padding-top: 200px;
+    padding-top: 20em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -81,7 +81,7 @@ body{
     max-height: 16em;
 
     display: block;
-    padding-top: 200px;
+    padding-top: 20em;
     margin-left: auto;
     margin-right: auto;
     /* width: 50%; */
@@ -106,10 +106,10 @@ body{
     margin: 2em 0 2em 0;
 }
 
-#project-card-1{
+/* #project-card-1{
     display: flex;
     flex-direction: column;
-}
+} */
 
 #project-card-2{
     display: flex;
@@ -121,27 +121,49 @@ body{
     display: flex;
     justify-content: center;
     border:  1em solid lightgrey;
+    min-width: 250px;
 }
 
 .preview-left-column{
-    padding: 3em 1em 0 1em;
+    width: 100%;
+    max-width: 300px;
+    min-width: 250px;
 }
-.preview-left-column img{
-    opacity: 0.8
-}
-/* .preview-left-column:focus,
-.preview-left-column:hover{
-    outline: 1px solid gray;
-} */
-
 .sub-card{
-    padding: 1em;
-}
+    position: relative;
+    text-align: center;
+    /* width: 100%; */
 
-/* .sub-card:focus,
-.sub-card:hover{
-    outline: 1px solid gray;
-} */
+    padding: 0.5em;
+}
+.sub-card img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.sub-card .overlay-text {
+
+    position: absolute;
+    bottom: 0.5em; 
+    right: 0.5em;
+    left: 0.5em;
+    /* background: rgb(0, 0, 0); */
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    /* text-align: center; */
+    color: white;   
+    text-align: center;
+    padding-top: 0.5em;
+
+  }
+
+.preview-right-column{
+    padding: 4.5em 0.5em 0 0.5em;
+}
+.preview-right-column img{
+    opacity: 0.8;
+    position: relative;
+}
 
 
 
