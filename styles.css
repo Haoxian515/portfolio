@@ -56,7 +56,6 @@ body{
     height: auto;
     min-height: 100vh;
     width: 100%;
-
     text-align: center;
     background-image: linear-gradient(-135deg,#A5C0D1, #ECF0EF);
 
@@ -126,8 +125,8 @@ body{
 
 .preview-left-column{
     width: 100%;
-    max-width: 300px;
-    min-width: 250px;
+    /* max-width: 300px;
+    min-width: 250px; */
 }
 .sub-card{
     position: relative;
@@ -158,7 +157,7 @@ body{
   }
 
 .preview-right-column{
-    padding: 4.5em 0.5em 0 0.5em;
+    padding: 0.5em 0.5em 0 0.5em;
 }
 .preview-right-column img{
     opacity: 0.8;
