@@ -47,6 +47,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 
 }
 
@@ -81,9 +82,11 @@ body{
 
 #introduction h1{
     color: lightgray;
+    margin-bottom: 1em;
 }
 #introduction h3{
     color: lightgray;
+    margin-bottom: 1em;
 }
 
 #profile #introduction{
@@ -92,7 +95,7 @@ body{
     padding: 2em;
     /* margin-top: 2em; */
     color: white;
-    
+    text-align: left;
     /* border:  0.2em solid white; */
     background: rgba(0, 0, 0, 0.5);
 
@@ -112,53 +115,94 @@ body{
     /* width: 50%; */
 }
 
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width:100%;
+    height: auto;
+    max-width: 100%;
+    /* background-image: url("./mountain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    
+    margin: 2em 0 2em 0;
+
+}
+
+
+#projects-container{
+    position: absolute;
+    top: 30%;
+    padding: 2em;
+    /* margin-top: 2em; */
+    color: white;
+    
+    /* border:  0.2em solid white; */
+    background: rgba(0, 0, 0, 0.5);
+}
+
 #second-card{
-    padding-top: 4rem;
+    
+    text-align: center;
+    padding-top: 2rem;
 
     /* height: 100vh; */
     height: auto;
     min-height: 100vh;
     width: 100%;
-    background-color: #FFFFFF;
+    min-width: 100%;
+    background-color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
 
+    background-image: url("./waterfall.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
+
+#second-card h1,h3{
+    color: white;
+}
+#second-card a{
+    color: white;
+}
+
+
 
 .project-header{
     margin: 2em 0 2em 0;
 }
 
-/* #project-card-1{
-    display: flex;
-    flex-direction: column;
-} */
 
 #project-card-2{
     display: flex;
     flex-direction: column;
-    /* max-width: 20rem; */
+    
 }
 
 .preview-container{
     display: flex;
     justify-content: center;
-    border:  1em solid lightgrey;
     min-width: 250px;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+    margin: 2em 2em 2em 2em;
+    background-color: rgba(75,102,159, 0.4);
+    
 }
 
 .preview-left-column{
     width: 100%;
-    /* max-width: 300px;
-    min-width: 250px; */
 }
 .sub-card{
     position: relative;
     text-align: center;
-    /* width: 100%; */
-
     padding: 0.5em;
 }
 .sub-card img{
@@ -172,11 +216,8 @@ body{
     bottom: 0.5em; 
     right: 0.5em;
     left: 0.5em;
-    /* background: rgb(0, 0, 0); */
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 234, 234, 0.5);
     color: #f1f1f1; 
-    /* text-align: center; */
-    color: white;   
     text-align: center;
     padding-top: 0.5em;
 
@@ -198,30 +239,44 @@ body{
     width: 100%;
     background-color: #F3FAFA;
     padding-top: 4rem;
+    text-align: center;
+
+    background-image: url("./lake.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#third-card h1{
+    color: red;
+}
+#third-card h3{
+    color: red;
+}
+#third-card a,div{
+    color: red;
 }
 
 #contact-page{
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
-    /* align-content: space-between; */
-
 
 }
 #contact-page-container{
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
+    
 }
 
 .contact-cards{
-    /* flex column */
-    /* padding: 1em 4em 1em 4em; 
-    margin: 1em 0 1em 0; */
-
     padding: 1em 4em 1em 4em; 
-    margin: 0em 1em 0em 1em;
+    margin: 1em 0 1em 0;
 
-    border: 0.2em solid black;
+    /* border: 0.2em solid black;
+     */
+
+     padding: 2em 8em 2em 8em;
+     margin: 2em 2em 2em 2em;
+     background-color: rgba(75,102,159, 0.4);
 }
 
 
