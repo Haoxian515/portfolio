@@ -14,13 +14,12 @@ $( document ).ready(function() {
     $("#nav").load(nav)
     $("#first-card").load(firstCard)
 
-    $("#second-card").load(secondCard, function(){
+    $("#second-card").load(secondCard, () => {
         $("#project-card-1").load(flight_visualiser)
         $("#project-card-2").load(gator_lodge)
         $("#project-card-3").load(open_rice)
     })
     $("#third-card").load(thirdCard)
-
     
 
 });
