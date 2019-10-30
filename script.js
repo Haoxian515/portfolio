@@ -19,20 +19,20 @@ $( document ).ready(function() {
         $("#project-card-1").load(flight_visualiser, () => {
             $("#flight").hide()
             $("#flight-btn").click(() => {
-                $("#flight").toggle()
+                $("#flight").fadeToggle(500)
             })
         })
 
         $("#project-card-2").load(gator_lodge, () => {
             $("#lodge").hide()
             $("#lodge-btn").click(() => {
-                $("#lodge").toggle()
+                $("#lodge").fadeToggle(500)
             })
         })
         $("#project-card-3").load(open_rice, () => {
             $("#rice").hide()
             $("#rice-btn").click(() => {
-                $("#rice").toggle()
+                $("#rice").fadeToggle(500)
             })
         })
     })

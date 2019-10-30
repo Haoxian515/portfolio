@@ -12,6 +12,16 @@ a:visited {
     text-decoration: none;
 }
 
+button{
+    width: 2em;
+    background-color: grey;
+
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
 
 html{
     margin: 0;
