@@ -1,21 +1,62 @@
+function hamburger() {
+    var x = document.getElementById("nav-links");
+    var nav = document.getElementById("nav");
+
+    if(nav.style.height === "16em"){
+        nav.style.height = "3em"
+        nav.style.opacity = "1";
+        nav.style.transition = "0.5s"
+
+    }else{
+        nav.style.height = "16em"
+        nav.style.opacity = "0.8";
+        nav.style.transition = "0.5s"
+    }
+
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+}
+
+function rotateA(){
+    var arrow = document.getElementById("arrow");
+        arrow.style.transition = "0.5s"
+        arrow.style.transform = "rotate(90deg)"
+
+}
+
+function rotateB(){
+    var arrow = document.getElementById("arrow");
+    arrow.style.transition = "0.5s"
+    arrow.style.transform = "rotate(0deg)"
+}
+
+
+
+
+// **document ready
 $( document ).ready(function() {
-    console.log( "ready!" );
+    
 
     let nav = "nav.html"
-    let firstCard = "first-card.html"
-    let secondCard = "second-card.html"
+    let aboutMe = "about-me.html"
+    let projects = "projects.html"
     let thirdCard = "third-card.html"
 
     let flight_visualiser = "./project_cards/flight-visualiser.html"
     let open_rice = "./project_cards/open-rice.html"
     let gator_lodge = "./project_cards/gator-lodge.html"
 
-    
     $("#nav").load(nav)
-    $("#first-card").load(firstCard)
-                $("#preview-right-column").hide()
 
-    $("#second-card").load(secondCard, () => {
+    
+    $("#about-me").load(aboutMe, () => {
+
+    })
+
+    $("#projects").load(projects, () => {
         $("#project-card-1").load(flight_visualiser, () => {
             $("#flight").hide()
             $("#flight-btn").click(() => {
@@ -36,7 +77,7 @@ $( document ).ready(function() {
             })
         })
     })
-    $("#third-card").load(thirdCard)
+    // $("#third-card").load(thirdCard)
     
 
 });
