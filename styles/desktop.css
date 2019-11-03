@@ -110,9 +110,31 @@ body{
 #project-card-container{
     display: flex;
     justify-content: center;
+
 }
 
-#project-card-1{}
+.project-card{
+    position: relative;
+    display: block;
+    max-width:28em;
+    height:auto;
+}
+.project-card img{
+    max-width: 100%;
+}
+
+.project-content-top{
+    position: absolute;;
+    text-align: center;
+    visibility:hidden;
+}
+
+
+.project-content-bot{
+    position: absolute;;
+    text-align: center;
+    visibility:hidden;
+}
 
 
 
