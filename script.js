@@ -37,19 +37,51 @@ function rotateB(){
 function showDetail(e){
 
     //IMG
+    let projectImg = $(e.getElementsByClassName("project-img")[0])
+    projectImg.stop(true)
     $(e.getElementsByClassName("project-img")[0]).animate({opacity:0})
 
-    //CONTENT
-    $(e.getElementsByClassName("project-content-top")[0]).css("visibility","visible")
-    $(e.getElementsByClassName("project-content-bot")[0]).css("visibility","visible")
+    //content top
+    let contentTop = $(e.getElementsByClassName("project-content-top")[0])
+    contentTop.stop(true)
+    contentTop.animate({
+        top: 50,
+        opacity: 1
+    }, 500);
+
+    //content bot
+    let contentBot = $(e.getElementsByClassName("project-content-bot")[0])
+    contentBot.stop(true)
+
+    contentBot.animate({
+        bottom:50,
+        opacity: 1
+    }, 500);
+
 
 }
 
 function unshowDetail(e){
+    //img
+    let projectImg = $(e.getElementsByClassName("project-img")[0])
+    projectImg.stop(true)
+    projectImg.animate({opacity:1})
 
-    $(e.getElementsByClassName("project-img")[0]).animate({opacity:1})
-    $(e.getElementsByClassName("project-content-top")[0]).css("visibility","hidden")
-    $(e.getElementsByClassName("project-content-bot")[0]).css("visibility","hidden")
+    //content top
+    let contentTop = $(e.getElementsByClassName("project-content-top")[0])
+    contentTop.stop(true)
+    contentTop.animate({
+        top: 0,
+        opacity: 0}
+        , 500);
+
+    //content bot
+    let contentBot = $(e.getElementsByClassName("project-content-bot")[0])
+    contentBot.stop(true)
+    contentBot.animate({
+        bottom: 0,
+        opacity: 0
+    }, 500);
 
 }
 
@@ -67,6 +99,7 @@ $( document ).ready(function() {
     let gator_lodge = "./project_cards/gator-lodge.html"
 
     let flightV2 = "./project_cards/flightv2.html"
+    let lodgeV2 = "./project_cards/lodgeV2.html"
 
     $("#nav").load(nav)
 
@@ -77,34 +110,17 @@ $( document ).ready(function() {
 
     $("#projects").load(projects, () => {
         $("#project-card-1").load(flightV2, () => {
-            // $(".project-card").mouseover((e)=>{
-            //     $(this).find('.project-content').css("visibility","visible");
-            // })
-            // $(".project-card").mouseout((e)=>{
-            //     $(this).find('.project-content').css("visibility","visible");
-            // })
-        })
-        // $("#project-card-1").load(flight_visualiser, () => {
-        //     $("#flight").hide()
-        //     $("#flight-btn").click(() => {
-        //         $("#flight").fadeToggle(500)
-        //     })
-        // })
 
-        // $("#project-card-2").load(gator_lodge, () => {
-        //     $("#lodge").hide()
-        //     $("#lodge-btn").click(() => {
-        //         $("#lodge").fadeToggle(500)
-        //     })
-        // })
-        // $("#project-card-3").load(open_rice, () => {
-        //     $("#rice").hide()
-        //     $("#rice-btn").click(() => {
-        //         $("#rice").fadeToggle(500)
-        //     })
-        // })
+        })
+        $("#project-card-2").load(lodgeV2, () => {
+
+        })
+        $("#project-card-3").load(lodgeV2, () => {
+
+        })
+
     })
-    // $("#third-card").load(thirdCard)
+    $("#third-card").load(thirdCard)
     
 
 });
