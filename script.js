@@ -1,8 +1,20 @@
+const expandEM = "20em"
+let isOpen = true;
+
+function booleanBurger(){
+    if (isOpen){
+        reverseHamburger()
+    }else{
+        hamburger()
+    }
+    isOpen = !isOpen
+}
+
 function hamburger() {
     var x = document.getElementById("nav-links");
     var nav = document.getElementById("nav");
 
-    nav.style.height = "16em"
+    nav.style.height = expandEM
     nav.style.opacity = "0.8";
     nav.style.transition = "0.5s"
     x.style.display = "block";
@@ -13,7 +25,7 @@ function reverseHamburger(){
     var nav = document.getElementById("nav");
     var x = document.getElementById("nav-links");
 
-    if(nav.style.height === "16em"){
+    if(nav.style.height === expandEM){
         nav.style.height = "3em"
         nav.style.opacity = "1";
         nav.style.transition = "0.5s"
@@ -97,6 +109,12 @@ function unshowDetail(e){
 
 }
 
+function openNewTab(url )
+{
+  var win=window.open(url, '_blank');
+  win.focus();
+}
+
 // **document ready
 $( document ).ready(function() {
     
@@ -104,7 +122,7 @@ $( document ).ready(function() {
     let nav = "nav.html"
     let aboutMe = "about-me.html"
     let projects = "projects.html"
-    let thirdCard = "third-card.html"
+    let contact = "contact.html"
 
     let flightV2 = "./project_cards/flightv2.html"
     let lodgeV2 = "./project_cards/lodgeV2.html"
@@ -129,7 +147,7 @@ $( document ).ready(function() {
         })
 
     })
-    $("#third-card").load(thirdCard)
+    $("#contact").load(contact)
     
 
 });
