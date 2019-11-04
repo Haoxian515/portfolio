@@ -145,7 +145,6 @@ $( document ).ready(function() {
         $("#project-card-3").load(ricev2, () => {
 
         })
-
     })
     $("#contact").load(contact)
     

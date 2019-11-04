@@ -1,5 +1,213 @@
-*{
+a:link, a:visited {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+    min-width: 400px;
+}
+
+body{
     margin: 0;
     padding: 0;
-    color: red;
+}
+
+img{
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#nav {
+    height: 3em;
+    background-color: #242834;
+    position: relative;
+    display: flex;
+    padding: 1em 1em 1em 0;
+}
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+#nav #nav-links{
+    margin-top: 3em;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+#nav a {
+    color: white;
+    margin: 2em;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+}
+
+#nav a.icon {
+    /* background: black; */
+    display: block;
+    position: absolute;
+    /* height: 4em; */
+    right: 0;
+    top: 0;
+}
+#nav a.icon:hover{
+    opacity: 0.8;
+}
+
+.fa-bars{ 
+    transform: scale(2); 
+}
+
+/* **ENDOF NAV */
+
+
+#profile{
+    overflow: hidden;
+    /* height: 28em; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    
+}
+
+#profile img{
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#profile:hover{
+    opacity: 0.9;
+}
+
+#introduction{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#introduction p{
+    font-family: 'Courier New';
+    color: white;
+    /* font-size: 20px; */
+}
+
+#introduction button{
+    height: 4em;
+    font-size: 12px;
+    color: white;
+    background-color:transparent;
+    border: skyblue 5px solid;
+    font-family: 'Courier New';
+}
+
+
+#introduction button:hover{
+    background-color:skyblue;
+}
+
+/* END OF ABOUT_ME */
+
+
+#projects{
+    overflow: hidden;
+    background-color: white;
+    min-height: 30em;
+}
+
+#projects h1{
+    color: black;
+    text-align: center;
+}
+
+#project-card-container{
+
+    justify-content: center;
+
+}
+
+.project-card{
+    position: relative;
+    display: block;
+    height:auto;
+}
+.project-card img{
+    max-width: 100%;
+}
+
+.project-content-top{
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.project-content-bot{
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-content-bot .press{
+    padding: 10px;
+    border:  #9BBDD6 2px solid;
+    color: #9BBDD6
+}
+
+.project-content-top p{
+    color:#92D3ED;
+}
+
+/* EOF PROJECTS */
+
+#contact{
+    background: #242834;
+    color: white;
+    text-align: center;
+    min-height: 30em;
+    padding: 2em;
+}
+#contact-page-container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.contact-cards{
+    min-width: 8em;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    border: white 4px solid;
+    /* padding: 1em 2em 1em 4em; */
+}
+.contact-cards div{
+
+    margin: 0.5em 0 0 0;
+    
+}
+.contact-cards i{
+    font-size: 2em;
 }
