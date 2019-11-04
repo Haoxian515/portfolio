@@ -2,6 +2,12 @@
     /* color:white */
 }
 
+a:link, a:visited {
+    text-decoration: none;
+    color: #9BBDD6;
+    cursor: pointer;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -139,7 +145,16 @@ body{
     opacity: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+.project-content-bot .press{
+    padding: 10px;
+    border:  #9BBDD6 2px solid;
+    color: #9BBDD6
+}
+
+.project-content-top p{
+    color:#92D3ED;
 }
 
 
