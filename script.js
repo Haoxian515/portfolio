@@ -125,8 +125,8 @@ $( document ).ready(function() {
     let contact = "contact.html"
 
     let flightV2 = "./project_cards/flightv2.html"
-    let lodgeV2 = "./project_cards/lodgeV2.html"
-    let ricev2 = "./project_cards/ricev2.html"
+    let lodgeV2  = "./project_cards/lodgeV2.html"
+    let riceV2   = "./project_cards/riceV2.html"
 
     $("#nav").load(nav)
 
@@ -142,9 +142,7 @@ $( document ).ready(function() {
         $("#project-card-2").load(lodgeV2, () => {
 
         })
-        $("#project-card-3").load(ricev2, () => {
-
-        })
+        $("#project-card-3").load(riceV2)
     })
     $("#contact").load(contact)
     
